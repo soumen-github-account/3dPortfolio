@@ -1,0 +1,133 @@
+@import 'tailwindcss';
+
+body{
+  font-family: "Crimson Pro", serif;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+
+@layer utilities {
+  .blurred-planet-bg {
+    background-image: url('/src/assets/herobg.png');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% auto;
+    filter: blur(2px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  @media (min-width: 1024px) {
+    .blurred-planet-bg {
+      background-size: cover;
+      bottom: -5%;
+    }
+  }
+}
+
+.btn{
+  background: linear-gradient(70deg, rgb(13, 13, 14), #B6F500);
+}
+.btn1{
+  position: relative;
+}
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.btn1::after, .btn1::before{
+  --angle:0deg;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle) , transparent 70%, rgb(207, 172, 187));
+  top: 0;
+  left: 0;
+  z-index: -1;
+  padding: 3px;
+  animation: 2s spin linear infinite;
+}
+
+.btn1::before{
+  filter: blur(1.5rem);
+}
+
+@keyframes spin {
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 180deg;
+  }
+}
+
+.main::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(25, 25, 25);
+  /* background-image: conic-gradient(from var(--angle) , transparent 70%, rgb(207, 172, 187)); */
+  top: 0;
+  left: 0;
+  opacity: 70%;
+  filter: blur(100px);
+}
+
+#hero {
+  z-index: 10;
+  position: relative;
+}
+#about {
+  z-index: 20;
+  position: relative;
+}
+
+#project {
+  z-index: 30;
+  position: relative;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.rainbow::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 50% 30%;
+    filter: blur(6px);
+    background-image: linear-gradient(#B6F500);
+    animation: rotate 4s linear infinite;
+}
+
+.image {
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
