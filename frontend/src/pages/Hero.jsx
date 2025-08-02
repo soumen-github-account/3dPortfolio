@@ -83,7 +83,7 @@ const Hero = () => {
                 <span className='md:text-5xl text-[#B6F500] text-[40px]'>
                 <Typewriter
                   options={{
-                  strings: ['Web Developer', 'Designer', 'Youtubar', 'Freelancer'],
+                  strings: ['FullStack Developer', 'Designer', 'Java Developer'],
                   autoStart: true,
                   loop: true,
                 }}

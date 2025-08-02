@@ -6,11 +6,12 @@ const skills = [
     title: 'Languages & Frameworks',
     icon: <FaCode />,
     skills: [
-      { name: 'Python', level: 90 },
-      { name: 'Django', level: 85 },
-      { name: 'Flask', level: 88 },
       { name: 'HTML/CSS', level: 85 },
+      { name: 'JavaScript', level: 70 },
+      { name: 'MERN', level: 90 },
+      { name: 'Django', level: 85 },
       { name: 'MySQL', level: 80 },
+      { name: 'Java', level: 85 },
     ],
   },
   {
@@ -21,7 +22,7 @@ const skills = [
       { name: 'GitHub', level: 88 },
       { name: 'Docker', level: 75 },
       { name: 'REST API', level: 82 },
-      { name: 'Linux', level: 70 },
+      { name: 'WebSoket', level: 85 },
     ],
   },
   {
@@ -29,10 +30,10 @@ const skills = [
     icon: <FaDatabase />,
     skills: [
       { name: 'VS Code', level: 95 },
-      { name: 'Jupyter Notebook', level: 88 },
+      { name: 'Intellij IDEA', level: 85 },
+      { name: 'Eclipse IDE', level: 85 },
       { name: 'Figma', level: 85 },
-      { name: 'Excel', level: 80 },
-      { name: 'Power BI', level: 75 },
+      { name: 'Postman API test', level: 80 },
     ],
   },
   {
@@ -40,9 +41,9 @@ const skills = [
     icon: <FaPalette />,
     skills: [
       { name: 'CRUD Operations', level: 88 },
-      { name: 'SDLC', level: 85 },
       { name: 'User Authentication', level: 90 },
       { name: 'OOP', level: 85 },
+      { name: 'Problem Solving', level: 80 },
       { name: 'Version Control', level: 88 },
     ],
   },
