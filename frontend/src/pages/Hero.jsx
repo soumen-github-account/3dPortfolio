@@ -6,12 +6,13 @@ import { FaInstagram } from "react-icons/fa";
 import { GiMoebiusTriangle } from "react-icons/gi";
 import bgImage from '../assets/smoke.webp'
 import InfiniteSlider from '../components/InfiniteSlider ';
-import heroImg from '../assets/hero.png'
+import heroImg from '../assets/hero2.png'
 
 import '../index.css'; 
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { SiLeetcode } from "react-icons/si";
 
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
@@ -90,9 +91,11 @@ const Hero = () => {
                 />
                 </span>
               </div>
-              <p className='md:text-[20px] text-sm font-medium text-white'>
-                I am an experienced Full-Stack Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth.
-
+              <p className='md:text-[20px] text-sm text-white'>
+                {/* I am an experienced Full-Stack Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth. */}
+                Computer Science undergraduate with hands-on experience in building full-stack web
+                applications. Strong foundation in data structures, REST APIs, and database design, seeking
+                internship or entry-level opportunities in web development.
                 {/* My passion for web development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project. */}
               </p>
               
@@ -101,10 +104,10 @@ const Hero = () => {
                   <a href='#about' className='py-2 px-7 text-[18px] font-medium border-2 border-[#B6F500] cursor-pointer text-[#B6F500]'>About Me</a>
                 </div>
                 <div className='flex mt-3 gap-x-3'>
-                  <span className='rounded-md p-2 z-10 text-[26px] hover:bg-gray-900 border-1 border-gray-700 cursor-pointer'><FiGithub /></span>
-                  <span className='rounded-md p-2 z-10 text-[26px] hover:bg-blue-400 border-1 border-gray-700 cursor-pointer'><FaLinkedinIn /></span>
-                  <span className='rounded-md p-2 z-10 text-[26px] hover:bg-pink-900 border-1 border-gray-700 cursor-pointer'><FaInstagram /></span>
-                  <span className='rounded-md p-2 z-10 text-[26px] hover:bg-[#B6F500] border-1 border-gray-700 cursor-pointer hover:text-black'><GiMoebiusTriangle /></span>
+                  <a href='https://github.com/soumen-github-account' className='rounded-md p-2 z-10 text-[26px] hover:bg-purple-900 border-1 border-gray-700 cursor-pointer'><FiGithub /></a>
+                  <a href='https://linkedin.com/in/soumen-das-07b2b2328' className='rounded-md p-2 z-10 text-[26px] hover:bg-blue-400 border-1 border-gray-700 cursor-pointer'><FaLinkedinIn /></a>
+                  <a href='https://leetcode.com/soumen-leetcode/' className='rounded-md p-2 z-10 text-[26px] hover:bg-orange-600 border-1 border-gray-700 cursor-pointer'><SiLeetcode /></a>
+                  <a href='#' className='rounded-md p-2 z-10 text-[26px] hover:bg-[#B6F500] border-1 border-gray-700 cursor-pointer hover:text-black'><GiMoebiusTriangle /></a>
                 </div>
           </div>
           <div>
@@ -113,7 +116,7 @@ const Hero = () => {
         </div>
         <div className='image z-10 mt-10 rounded-full lg:w-[25vw] lg:h-[25vw] w-[50vw] h-[50vw] flex justify-center items-center overflow-hidden bg-gradient-to-b from-[#B6F500] to-black'>
           <div className='mt-20 animate-pulse'>
-            <img src={heroImg} alt="" />
+            <img src={heroImg} alt="" className='w-65 lg:mr-3 max-sm:w-50 max-sm:mb-8' />
           </div>
         </div>
       </div>
