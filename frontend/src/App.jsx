@@ -4,15 +4,6 @@ import Home from './pages/Home'
 import AllProjects from './pages/AllProjects'
 import { Toaster } from "react-hot-toast";
 
-// import Navbar from './pages/Navbar'
-// import Hero from './pages/Hero'
-// import About from './pages/About'
-// import Skills from './pages/Skills'
-// import Projects from './pages/Projects'
-// import Footer from './pages/Footer'
-// import MidBanner from './pages/MidBanner'
-// import TechStack from './pages/TechStack'
-
 const App = () => {
   return (
     <div>

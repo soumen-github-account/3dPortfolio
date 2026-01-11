@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import BrandingCard from '../components/BrandCard'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 const AllProjects = () => {
-  
   useGSAP(()=>{
 
   gsap.to("#project", {
@@ -18,8 +17,6 @@ const AllProjects = () => {
       }
 
     })
-
-
     },[])
   return (
     

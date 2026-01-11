@@ -13,6 +13,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { SiLeetcode } from "react-icons/si";
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
@@ -100,7 +101,7 @@ const Hero = () => {
               </p>
               
                 <div className='flex gap-x-3 mt-3'>
-                  <a href='/all-projects' className='py-2 px-7 text-[18px] font-medium bg-[#B6F500] cursor-pointer text-black'>Projects</a>
+                  <Link to='/all-projects' className='py-2 px-7 text-[18px] font-medium bg-[#B6F500] cursor-pointer text-black'>Projects</Link>
                   <a href='#about' className='py-2 px-7 text-[18px] font-medium border-2 border-[#B6F500] cursor-pointer text-[#B6F500]'>About Me</a>
                 </div>
                 <div className='flex mt-3 gap-x-3'>
