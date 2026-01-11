@@ -100,7 +100,7 @@ const Hero = () => {
               </p>
               
                 <div className='flex gap-x-3 mt-3'>
-                  <a href='#project' className='py-2 px-7 text-[18px] font-medium bg-[#B6F500] cursor-pointer text-black'>Projects</a>
+                  <a href='/all-projects' className='py-2 px-7 text-[18px] font-medium bg-[#B6F500] cursor-pointer text-black'>Projects</a>
                   <a href='#about' className='py-2 px-7 text-[18px] font-medium border-2 border-[#B6F500] cursor-pointer text-[#B6F500]'>About Me</a>
                 </div>
                 <div className='flex mt-3 gap-x-3'>
