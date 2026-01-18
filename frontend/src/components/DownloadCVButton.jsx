@@ -27,7 +27,7 @@ const DownloadCVButton = () => {
       className="
         relative overflow-hidden
         flex items-center gap-2
-        px-4 py-2 rounded-md
+        px-2 py-2 rounded-md
         border border-gray-700
         text-[14px] text-white
         transition-all duration-300
@@ -43,13 +43,13 @@ const DownloadCVButton = () => {
       {/* Icon */}
       <GoDownload
         className={`
-          relative z-10 text-[20px]
+          relative z-10 text-[14px]
           ${isDownloading ? "animate-bounce" : ""}
         `}
       />
 
       {/* Text */}
-      <span className="relative z-10">
+      <span className="relative z-10 text-[14px]">
         {isDownloading ? "Downloading..." : "Download CV"}
       </span>
     </button>
