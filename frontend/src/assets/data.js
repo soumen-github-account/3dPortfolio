@@ -1,12 +1,32 @@
 
-import reactIcon from "../assets/tech/react.svg";
-import tailwindIcon from "../assets/tech/tailwind.svg";
-import nodeIcon from "../assets/tech/node.svg";
-import mongoIcon from "../assets/tech/mongodb.svg";
-import expressIcon from "../assets/tech/express.svg";
-import firebaseIcon from "../assets/tech/firebase.svg";
-// import gsapIcon from "../assets/tech/gsap.svg";
-import stripeIcon from "../assets/tech/stripe.svg";
+import {
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+} from "react-icons/fa";
+import { SiTailwindcss, SiDjango, SiGooglegemini, SiPostgresql,SiSpringboot, SiRedux, SiYoutubekids, SiShadcnui, SiRazorpay, SiMongodb, SiFirebase, SiExpress, SiStripe, SiOpenai, SiChartdotjs } from "react-icons/si";
+import { TiCloudStorageOutline } from "react-icons/ti";
+
+export const techIconMap = {
+  React: FaReact,
+  Tailwind: SiTailwindcss,
+  "Node.js": FaNodeJs,
+  "Shadcn Ui": SiShadcnui,
+  "Youtube API":SiYoutubekids,
+  Razorpay : SiRazorpay,
+  Redux: SiRedux,
+  MongoDB: SiMongodb,
+  Firebase: SiFirebase,
+  Express: SiExpress,
+  Stripe: SiStripe,
+  "OpenAI API": SiOpenai,
+  "Gemini API": SiGooglegemini,
+  "Neon DB": SiPostgresql,
+  "Chart.js": SiChartdotjs,
+  Django: SiDjango,
+  "Spring Boot": SiSpringboot,
+  "Cloud Storage": TiCloudStorageOutline
+};
 
 
 import img1 from '../assets/project_img/img1.png'
@@ -23,243 +43,125 @@ import img11 from '../assets/project_img/img11.png'
 import img12 from '../assets/project_img/img12.png'
 
 
-// export const projectData = [
-//     {
-//         id:1,
-//         image:img1,
-//         name:"Build Your Resume Effortlessly",
-//         description:"Craft a standout resume in minuites with our smart and inutitive resume builder.",
-//         url: "https://resume-builder-frontent.onrender.com/",
-//     },
-//     {
-//         id:2,
-//         image:img2,
-//         name:"Instagram-style social app",
-//         description:"A social platform where you share reels, stories, and life’s highlights with a modern twist.",
-//         url: "https://instagram-clone-frontend-9xh4.onrender.com",
-//     },
-//     {
-//         id:3,
-//         image:img3,
-//         name:"Shop fast. Live more. 'Shopstic'",
-//         description:"Discover products you love, deals you can't resist, and a checkout that takes seconds.",
-//         url: "https://e-commerce-frontend-10m4.onrender.com",
-//     },
-//     {
-//         id:4,
-//         image:img4,
-//         name:"Instant doctor appointments, anytime.",
-//         description:"Your one-stop app for doctor appointments, consultations, and healthcare access.",
-//         url: "https://doctor-appointment-frontend-rfco.onrender.com",
-//     },
-//     {
-//         id:5,
-//         image:img5,
-//         name:"Mess booking made simple.",
-//         description:"Your smart way to manage and book meals from your favorite mess.",
-//         url: "https://mess-book-frontend.onrender.com",
-//     },
-//     {
-//         id:6,
-//         image:img6,
-//         name:"Your music. Your mood.",
-//         description:"Stream your favorite songs, create playlists, and discover fresh tracks every day",
-//         url: "https://spotify-clone-psi-gules.vercel.app/",
-//     },
-//     {
-//         id:7,
-//         image:img7,
-//         name:"Unlimited videos. One app.",
-//         description:"Upload, stream, and explore an endless world of videos — anytime, anywhere.",
-//         url: "https://jovial-baklava-28f907.netlify.app/",
-//     },
-//     {
-//         id:8,
-//         image:img8,
-//         name:"From snacks to full plates – we deliver all",
-//         description:"Order your favorite food from top restaurants and get it delivered fast.",
-//         url: "https://dainty-bavarois-7e4335.netlify.app/",
-//     },
-//     {
-//         id:9,
-//         image:img9,
-//         name:"Your intelligent conversation partner",
-//         description:"Your personal AI assistant — for questions, writing, coding, and more.",
-//         url: "https://chat-bot-sd.netlify.app/",
-//     },
-//     {
-//         id: 10,
-//         image: img10,
-//         name: "Jewellery Shopping Made Elegant",
-//         description: "Browse, wishlist, and shop beautiful jewellery pieces with ease and confidence.",
-//         url: "https://jewellery-app-frontend.onrender.com/",
-//     },
-//     {
-//         id: 11,
-//         image: img11,
-//         name: "Find jobs that fit your future",
-//         description: "Search, apply, and track job opportunities with a smart and user-friendly job finder platform.",
-//         url: "https://job-finder-frontend.onrender.com/",
-//     },
-//     {
-//         id: 12,
-//         image: img12,
-//         name: "Track expenses. Control your money.",
-//         description: "Monitor your income and expenses, visualize spending habits, and manage finances effortlessly.",
-//         url: "https://expense-tracker-frontend.onrender.com/",
-//     }
-
-
-
-// ]
-
 export const projectData = [
   {
     id: 1,
     image: img1,
     name: "Build Your Resume Effortlessly",
-    description: "Craft a standout resume in minuites with our smart and inutitive resume builder.",
-    url: "https://resume-builder-frontent.onrender.com/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-      { name: "Node.js", icon: nodeIcon },
-      { name: "MongoDB", icon: mongoIcon },
-    ],
+    description:
+      "Craft a standout resume in minutes with our smart and intuitive resume builder.",
+    liveUrl: "https://resume-builder-frontent.onrender.com/",
+    githubUrl: "https://github.com/soumen-github-account/resume-builder",
+    techStack: ["React", "Tailwind", "Node.js", "Express", "MongoDB", "Gemini API"],
   },
   {
     id: 2,
     image: img2,
-    name: "Instagram-style social app",
-    description: "A social platform where you share reels, stories, and life’s highlights with a modern twist.",
-    url: "https://instagram-clone-frontend-9xh4.onrender.com",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Firebase", icon: firebaseIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-    ],
+    name: "Instagram-style Social App",
+    description:
+      "A social platform where you share reels, stories, and life’s highlights with a modern twist.",
+    liveUrl: "https://instagram-clone-frontend-9xh4.onrender.com",
+    githubUrl: "https://github.com/soumen-github-account/instagram-clone",
+    techStack: ["React", "Redux", "Tailwind", "Node.js", "Express", "Shadcn Ui","MongoDB"],
   },
   {
     id: 3,
     image: img3,
     name: "Shop fast. Live more. 'Shopstic'",
-    description: "Discover products you love, deals you can't resist, and a checkout that takes seconds.",
-    url: "https://e-commerce-frontend-10m4.onrender.com",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Node.js", icon: nodeIcon },
-      { name: "Express", icon: expressIcon },
-      { name: "MongoDB", icon: mongoIcon },
-      { name: "Stripe", icon: stripeIcon },
-    ],
+    description:
+      "Discover products you love, deals you can't resist, and fast checkout.",
+    liveUrl: "https://e-commerce-frontend-10m4.onrender.com",
+    githubUrl: "https://github.com/soumen-github-account/E-Commerce",
+    techStack: ["React", "Tailwind", "Node.js", "Express", "MongoDB", "Razorpay"],
   },
   {
     id: 4,
     image: img4,
-    name: "Instant doctor appointments, anytime.",
-    description: "Your one-stop app for doctor appointments, consultations, and healthcare access.",
-    url: "https://doctor-appointment-frontend-rfco.onrender.com",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Node.js", icon: nodeIcon },
-      { name: "MongoDB", icon: mongoIcon },
-    ],
+    name: "Instant Doctor Appointments",
+    description:
+      "Book doctor appointments, consult online, and access healthcare anytime.",
+    liveUrl: "https://doctor-appointment-frontend-rfco.onrender.com",
+    githubUrl: "https://github.com/soumen-github-account/doctor-appointment",
+    techStack: ["React", "Tailwind", "Node.js", "Express","MongoDB"],
   },
   {
     id: 5,
     image: img5,
-    name: "Mess booking made simple.",
-    description: "Your smart way to manage and book meals from your favorite mess.",
-    url: "https://mess-book-frontend.onrender.com",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-      { name: "Firebase", icon: firebaseIcon },
-    ],
+    name: "Mess Booking Made Simple",
+    description:
+      "Manage and book daily meals from your favorite mess effortlessly.",
+    liveUrl: "https://mess-book-frontend.onrender.com",
+    githubUrl: "https://github.com/soumen-github-account/mess-book",
+    techStack: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
   },
   {
     id: 6,
     image: img6,
-    name: "Your music. Your mood.",
-    description: "Stream your favorite songs, create playlists, and discover fresh tracks every day",
-    url: "https://spotify-clone-psi-gules.vercel.app/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Spotify API", icon: reactIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-    ],
+    name: "Your Music. Your Mood.",
+    description:
+      "Stream music, create playlists, and discover new tracks every day.",
+    liveUrl: "https://spotify-clone-psi-gules.vercel.app/",
+    githubUrl: "https://github.com/soumen-github-account/spotify-clone",
+    techStack: ["React", "Tailwind", "Node.js", "Express", "MongoDB"],
   },
   {
     id: 7,
     image: img7,
-    name: "Unlimited videos. One app.",
-    description: "Upload, stream, and explore an endless world of videos — anytime, anywhere.",
-    url: "https://jovial-baklava-28f907.netlify.app/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Firebase", icon: firebaseIcon },
-      { name: "Cloud Storage", icon: firebaseIcon },
-    ],
+    name: "Unlimited Videos. One App.",
+    description:
+      "Upload, stream, and explore videos anytime, anywhere.",
+    liveUrl: "https://jovial-baklava-28f907.netlify.app/",
+    githubUrl: "https://github.com/yourusername/video-streaming-app",
+    techStack: ["React", "Cloud Storage", "Youtube API"],
   },
   {
     id: 8,
     image: img8,
-    name: "From snacks to full plates – we deliver all",
-    description: "Order your favorite food from top restaurants and get it delivered fast.",
-    url: "https://dainty-bavarois-7e4335.netlify.app/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Node.js", icon: nodeIcon },
-      { name: "MongoDB", icon: mongoIcon },
-    ],
+    name: "From Snacks to Full Plates",
+    description:
+      "Order food from top restaurants and get it delivered fast.",
+    liveUrl: "https://dainty-bavarois-7e4335.netlify.app/",
+    githubUrl: "https://github.com/yourusername/food-delivery",
+    techStack: ["React", "Spring Boot", "MongoDB"],
   },
   {
     id: 9,
     image: img9,
-    name: "Your intelligent conversation partner",
-    description: "Your personal AI assistant — for questions, writing, coding, and more.",
-    url: "https://chat-bot-sd.netlify.app/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "OpenAI API", icon: reactIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-    ],
+    name: "Your Intelligent Conversation Partner",
+    description:
+      "An AI-powered assistant for chatting, writing, and coding.",
+    liveUrl: "https://chat-bot-sd.netlify.app/",
+    githubUrl: "https://github.com/soumen-github-account/own-chatbot",
+    techStack: ["React", "Gemini API", "Tailwind"],
   },
   {
     id: 10,
     image: img10,
     name: "Jewellery Shopping Made Elegant",
-    description: "Browse, wishlist, and shop beautiful jewellery pieces with ease and confidence.",
-    url: "https://jewellery-shop-frontend-henna.vercel.app/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Tailwind", icon: tailwindIcon },
-      { name: "Node.js", icon: nodeIcon },
-      { name: "MongoDB", icon: mongoIcon },
-    ],
+    description:
+      "Browse, wishlist, and shop beautiful jewellery with confidence.",
+    liveUrl: "https://jewellery-shop-frontend-henna.vercel.app/",
+    githubUrl: "https://github.com/soumen-github-account/Jewellery-shop",
+    techStack: ["React", "Tailwind", "Node.js", "Neon DB"],
   },
   {
     id: 11,
     image: img11,
-    name: "Find jobs that fit your future",
-    description: "Search, apply, and track job opportunities with a smart and user-friendly job finder platform.",
-    url: "https://job-finder-portal-worksphere.onrender.com/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Node.js", icon: nodeIcon },
-      { name: "MongoDB", icon: mongoIcon },
-    ],
+    name: "Find Jobs That Fit Your Future",
+    description:
+      "Search, apply, and track job opportunities easily.",
+    liveUrl: "https://job-finder-portal-worksphere.onrender.com/",
+    githubUrl: "https://github.com/soumen-github-account/internship-project",
+    techStack: ["Express", "Tailwind", "MongoDB"],
   },
   {
     id: 12,
     image: img12,
-    name: "Track expenses. Control your money.",
-    description: "Monitor your income and expenses, visualize spending habits, and manage finances effortlessly.",
-    url: "https://expense-tracker-frontend-omega-one.vercel.app/",
-    techStack: [
-      { name: "React", icon: reactIcon },
-      { name: "Chart.js", icon: reactIcon },
-      { name: "MongoDB", icon: mongoIcon },
-    ],
+    name: "Track Expenses. Control Your Money.",
+    description:
+      "Monitor income, expenses, and visualize spending habits.",
+    liveUrl: "https://expense-tracker-frontend-omega-one.vercel.app/",
+    githubUrl: "https://github.com/soumen-github-account/expense-tracker",
+    techStack: ["React", "Chart.js", "Django","MongoDB"],
   },
 ];

@@ -14,6 +14,8 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { SiLeetcode } from "react-icons/si";
 import { Link } from 'react-router-dom';
+import { GoDownload } from "react-icons/go";
+import DownloadCVButton from '../components/DownloadCVButton';
 
 gsap.registerPlugin(ScrollTrigger);
 const Hero = () => {
@@ -100,16 +102,117 @@ const Hero = () => {
                 {/* My passion for web development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project. */}
               </p>
               
-                <div className='flex gap-x-3 mt-3'>
-                  <Link to='/all-projects' className='py-2 px-7 text-[18px] font-medium bg-[#B6F500] cursor-pointer text-black'>Projects</Link>
-                  <a href='#about' className='py-2 px-7 text-[18px] font-medium border-2 border-[#B6F500] cursor-pointer text-[#B6F500]'>About Me</a>
+              <div className="flex gap-x-3 mt-3">
+                  {/* Projects Button */}
+                  <Link
+                    to="/all-projects"
+                    className="
+                      relative overflow-hidden
+                      py-2 px-7 text-[18px] font-medium
+                      border-2 border-[#B6F500]
+                      text-black bg-[#B6F500]
+                      transition-colors duration-300
+                      before:absolute before:inset-0
+                      before:bg-black
+                      before:translate-y-full
+                      before:transition-transform before:duration-300
+                      hover:before:translate-y-0
+                      hover:text-[#B6F500]
+                      z-10
+                    "
+                  >
+                    <span className="relative z-20">Projects</span>
+                  </Link>
+
+                  {/* About Me Button */}
+                  <a
+                    href="#about"
+                    className="
+                      relative overflow-hidden
+                      py-2 px-7 text-[18px] font-medium
+                      border-2 border-[#B6F500]
+                      text-[#B6F500]
+                      transition-colors duration-300
+                      before:absolute before:inset-0
+                      before:bg-[#B6F500]
+                      before:translate-y-full
+                      before:transition-transform before:duration-300
+                      hover:before:translate-y-0
+                      hover:text-black
+                      z-10
+                    "
+                  >
+                    <span className="relative z-20">About Me</span>
+                  </a>
+
                 </div>
-                <div className='flex mt-3 gap-x-3'>
-                  <a href='https://github.com/soumen-github-account' className='rounded-md p-2 z-10 text-[26px] hover:bg-purple-900 border-1 border-gray-700 cursor-pointer'><FiGithub /></a>
-                  <a href='https://linkedin.com/in/soumen-das-07b2b2328' className='rounded-md p-2 z-10 text-[26px] hover:bg-blue-400 border-1 border-gray-700 cursor-pointer'><FaLinkedinIn /></a>
-                  <a href='https://leetcode.com/soumen-leetcode/' className='rounded-md p-2 z-10 text-[26px] hover:bg-orange-600 border-1 border-gray-700 cursor-pointer'><SiLeetcode /></a>
-                  <a href='#' className='rounded-md p-2 z-10 text-[26px] hover:bg-[#B6F500] border-1 border-gray-700 cursor-pointer hover:text-black'><GiMoebiusTriangle /></a>
-                </div>
+
+              <div className="flex mt-3 gap-x-3">
+
+              {/* GitHub – Glow + Scale */}
+              <a
+                href="https://github.com/soumen-github-account"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  relative p-2 rounded-md
+                  text-[26px]
+                  border border-gray-700
+                  text-white
+                  transition-all duration-300
+                  hover:bg-purple-900
+                  hover:scale-110
+                  hover:shadow-[0_0_15px_#9333ea]
+                "
+              >
+                <FiGithub />
+              </a>
+
+              {/* LinkedIn – Slide Up Fill */}
+              <a
+                href="https://linkedin.com/in/soumen-das-07b2b2328"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  relative overflow-hidden p-2 rounded-md
+                  text-[26px]
+                  border border-gray-700
+                  text-white
+                  before:absolute before:inset-0
+                  before:bg-blue-500
+                  before:translate-y-full
+                  before:transition-transform before:duration-300
+                  hover:before:translate-y-0
+                  hover:scale-110
+                "
+              >
+                <span className="relative z-10">
+                  <FaLinkedinIn />
+                </span>
+              </a>
+
+              {/* LeetCode – Rotate + Fill */}
+              <a
+                href="https://leetcode.com/soumen-leetcode/"
+                target="_blank"
+                rel="noreferrer"
+                className="
+                  relative p-2 rounded-md
+                  text-[26px]
+                  border border-gray-700
+                  text-white
+                  transition-all duration-300
+                  hover:bg-orange-600
+                  hover:rotate-6
+                  hover:scale-110
+                "
+              >
+                <SiLeetcode />
+              </a>
+              <DownloadCVButton />
+
+            </div>
+
           </div>
           <div>
         </div>
