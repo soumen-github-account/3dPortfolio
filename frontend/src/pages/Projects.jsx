@@ -10,7 +10,6 @@ const Projects = () => {
   useGSAP(()=>{
 
   gsap.to("#project", {
-      // scale: -29,
       scrollTrigger:{
         scroller:"#project",
         start: "top top",
@@ -19,9 +18,7 @@ const Projects = () => {
       }
 
     })
-
-
-    },[])
+  },[])
   return (
     
     <div id='project' className="min-h-screen bg-black p-4 mb-10 overflow-hidden">

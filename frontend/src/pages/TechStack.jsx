@@ -98,7 +98,7 @@ const TechStack = () => {
             `}</style>
 
         <div className="overflow-hidden w-full relative max-w-5xl mx-auto select-none mt-5">
-                <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-transparent" />
+            <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-transparent" />
                 <div className="marquee-inner1 flex will-change-transform min-w-[200%]" style={{ animationDuration: "15s" }}>
                     <div className="flex">
                         {[...companyLogos1, ...companyLogos1].map((company, index) => (
@@ -107,11 +107,11 @@ const TechStack = () => {
                         ))}
                     </div>
                 </div>
-                <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-transparent" />
+            <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-transparent" />
         </div>
 
         <div className="overflow-hidden w-full relative max-w-5xl mx-auto select-none mt-5">
-                <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-transparent to-transparent" />
+            <div className="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-transparent to-transparent" />
                 <div className="marquee-inner2 flex will-change-transform min-w-[200%]" style={{ animationDuration: "15s" }}>
                     <div className="flex">
                         {[...companyLogos2, ...companyLogos2].map((company, index) => (
@@ -120,7 +120,7 @@ const TechStack = () => {
                         ))}
                     </div>
                 </div>
-                <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-transparent to-transparent" />
+              <div className="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-transparent to-transparent" />
         </div>
       </div>
       

@@ -35,7 +35,6 @@ const ProjectCard = ({ item }) => {
         shadow-lg cursor-pointer
       "
     >
-      {/* Glow Effect */}
       <div
         className={`
           pointer-events-none absolute z-0 size-60 rounded-full blur-3xl
@@ -49,7 +48,6 @@ const ProjectCard = ({ item }) => {
         }}
       />
 
-      {/* Live Link (Always visible) */}
       <a href={item.liveUrl} target="_blank" rel="noreferrer">
         <div
           className="
@@ -66,7 +64,6 @@ const ProjectCard = ({ item }) => {
         </div>
       </a>
 
-      {/* GitHub Link (CARD HOVER ONLY) */}
       <a
         href={item.githubUrl}
         target="_blank"
@@ -89,13 +86,10 @@ const ProjectCard = ({ item }) => {
         <FaGithub size={18} />
       </a>
 
-      {/* Card Content */}
       <div className="relative z-10 bg-gray-900/80 backdrop-blur-md rounded-[10px] p-4">
 
-        {/* IMAGE GROUP (TECH STACK ONLY HERE) */}
         <div className="relative group/image w-full rounded-md my-4 overflow-hidden">
 
-          {/* Image */}
           <img
             src={item.image}
             alt={item.name}
@@ -107,7 +101,6 @@ const ProjectCard = ({ item }) => {
             "
           />
 
-          {/* Dark Overlay */}
           <div
             className="
               absolute inset-0
@@ -118,7 +111,6 @@ const ProjectCard = ({ item }) => {
             "
           />
 
-          {/* Tech Stack (IMAGE HOVER ONLY) */}
           <div
             className="
               absolute inset-0 z-10
@@ -158,7 +150,6 @@ const ProjectCard = ({ item }) => {
           </div>
         </div>
 
-        {/* Text */}
         <h2 className="text-xl text-center font-semibold text-white mt-4">
           {item.name}
         </h2>
@@ -171,51 +162,14 @@ const ProjectCard = ({ item }) => {
   );
 };
 
-// const BrandingCard = () => {
-//   const containerRef = useRef();
-//   const [showAll, setShowAll] = useState(false);
 
-//   const visibleProjects = showAll
-//     ? projectData
-//     : projectData.slice(0, 5);
-//   useGSAP(() => {
-//     // Select only children inside this container
-//     const cards = gsap.utils.toArray(".project-card");
-
-//     gsap.from(cards, {
-//       x: 100,
-//       opacity: 0,
-//       duration: 1,
-//       stagger: 0.3,
-//       ease: "power3.out",
-//       scrollTrigger: {
-//         trigger: containerRef.current,
-//         start: "top 80%",
-//         toggleActions: "play none none reverse",
-//       },
-//     });
-//   }, { scope: containerRef }); // Ensure DOM is ready and scoped
-
-//   return (
-//     <div
-//       ref={containerRef}
-//       id="projects"
-//       className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-center gap-14"
-//     >
-//       {projectData.map((item, index) => (
-//         <ProjectCard key={index} item={item} />
-//       ))}
-//     </div>
-//   );
-// };
 const BrandingCard = () => {
   const containerRef = useRef(null);
   const [showAll, setShowAll] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(
-    window.innerWidth >= 1024 // lg breakpoint
+    window.innerWidth >= 1024 
   );
 
-  // Detect screen resize
   React.useEffect(() => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
@@ -225,7 +179,6 @@ const BrandingCard = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // Decide visible projects
   const visibleProjects = isLargeScreen
     ? projectData
     : showAll
@@ -253,8 +206,6 @@ const BrandingCard = () => {
 
   return (
     <section id="projects" className="w-full flex flex-col items-center">
-
-      {/* PROJECT GRID */}
       <div
         ref={containerRef}
         className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-14"
@@ -264,7 +215,6 @@ const BrandingCard = () => {
         ))}
       </div>
 
-      {/* SHOW MORE BUTTON — ONLY SMALL SCREENS */}
       {!isLargeScreen && projectData.length > 5 && (
         <button
           onClick={() => setShowAll((prev) => !prev)}

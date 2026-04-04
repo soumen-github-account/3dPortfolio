@@ -20,7 +20,7 @@ const About = () => {
     ease: "power3.out",
     scrollTrigger: {
       trigger: "#about",
-      start: "top 30%", // when about section enters viewport
+      start: "top 30%", 
       end: "top 50%",
       toggleActions: "play none none reverse",
     }
@@ -34,15 +34,14 @@ const About = () => {
     stagger: 1,
     ease: "power3.out",
     scrollTrigger: {
-      trigger: "#about", // ID of the section
-      start: "top 30%",  // animation starts when about section enters viewport
+      trigger: "#about",
+      start: "top 30%",
       end: "top 10%",
       toggleActions: "play none none reverse"
     }
   });
 
     gsap.to("#about", {
-      // scale: -29,
       scrollTrigger:{
         scroller:"#about",
         start: "top top",
@@ -58,8 +57,8 @@ const About = () => {
     ease: "power1.out",
     scrollTrigger: {
       trigger: "#about",
-      start: "10%",      // start when #about's bottom hits viewport bottom
-      end: "50%",   // continue animation for 200px of scroll
+      start: "10%",
+      end: "50%",
       scrub: true,
     }
   });
@@ -88,13 +87,10 @@ const About = () => {
           <div className='flex items-center justify-between my-3 flex-wrap max-sm:flex-col'>
             <div className='feature-card lg:max-w-[30vw] rounded-2xl inset-shadow-sm inset-shadow-gray-400 p-6'>
               <div className='relative inline-block'>
-              {/* Blurred Background Behind Icon */}
               <div className="absolute -top-3 -left-3 w-10 h-10 rounded-full bg-gray-700 blur-sm z-0" />
 
-              {/* Icon */}
               <MdOutlineDesignServices className='absolute -top-3 -left-3 z-10 text-gray-300 text-[30px]' />
 
-              {/* Text */}
               <p className='md:text-2xl text-[20px] text-white relative z-20'>DESIGN</p>
             </div>
                 <p className='text-gray-300 md:text-[17px] text-[15px]'>I design clean, user-friendly interfaces with a focus on usability, accessibility, and modern UI/UX principles. I transform ideas into intuitive digital experiences.</p>

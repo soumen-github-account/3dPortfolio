@@ -8,7 +8,6 @@ const AllProjects = () => {
   useGSAP(()=>{
 
   gsap.to("#project", {
-      // scale: -29,
       scrollTrigger:{
         scroller:"#project",
         start: "top top",

@@ -24,7 +24,6 @@ const Hero = () => {
 
   const name = "Soumen";
 
-  // Animate letters on mount
   useGSAP(() => {
     gsap.from(lettersRef.current, {
       rotateX:360,
@@ -95,15 +94,13 @@ const Hero = () => {
                 </span>
               </div>
               <p className='md:text-[20px] text-sm text-white'>
-                {/* I am an experienced Full-Stack Developer with over a decade of professional expertise in the field. Throughout my career, I have had the privilege of collaborating with prestigious organizations, contributing to their success and growth. */}
                 Computer Science undergraduate with hands-on experience in building full-stack web
                 applications. Strong foundation in data structures, REST APIs, and database design, seeking
                 internship or entry-level opportunities in web development.
-                {/* My passion for web development is not only reflected in my extensive experience but also in the enthusiasm and dedication I bring to each project. */}
               </p>
               
               <div className="flex gap-x-3 mt-3">
-                  {/* Projects Button */}
+                
                   <Link
                     to="/all-projects"
                     className="
@@ -124,7 +121,6 @@ const Hero = () => {
                     <span className="relative z-20">Projects</span>
                   </Link>
 
-                  {/* About Me Button */}
                   <a
                     href="#about"
                     className="
@@ -149,7 +145,6 @@ const Hero = () => {
 
               <div className="flex mt-3 gap-x-3">
 
-              {/* GitHub – Glow + Scale */}
               <a
                 href="https://github.com/soumen-github-account"
                 target="_blank"
@@ -168,7 +163,6 @@ const Hero = () => {
                 <FiGithub />
               </a>
 
-              {/* LinkedIn – Slide Up Fill */}
               <a
                 href="https://linkedin.com/in/soumen-das-07b2b2328"
                 target="_blank"
@@ -191,7 +185,6 @@ const Hero = () => {
                 </span>
               </a>
 
-              {/* LeetCode – Rotate + Fill */}
               <a
                 href="https://leetcode.com/soumen-leetcode/"
                 target="_blank"

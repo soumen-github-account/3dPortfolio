@@ -41,7 +41,7 @@ import img9 from '../assets/project_img/img9.png'
 import img10 from '../assets/project_img/img10.png'
 import img11 from '../assets/project_img/img11.png'
 import img12 from '../assets/project_img/img12.png'
-
+import img13 from '../assets/project_img/img13.png'
 
 export const projectData = [
   {
@@ -164,4 +164,16 @@ export const projectData = [
     githubUrl: "https://github.com/soumen-github-account/expense-tracker",
     techStack: ["React", "Chart.js", "Django","MongoDB"],
   },
+
+  {
+    id: 13,
+    image: img13,
+    name: "AI Image Generator",
+    description:
+      "Generate images and all ai tasks from text prompts using AI. Fast and modern UI interface.",
+    liveUrl: "https://ai-saas-frontend-nk3k.onrender.com/",
+    githubUrl: "https://github.com/soumen-github-account/Ai-saas",
+    techStack: ["React", "Node.js", "Gemini API", "Tailwind", "MongoDB", "Neon DB"],
+  },
+
 ];

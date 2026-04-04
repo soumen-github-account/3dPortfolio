@@ -3,7 +3,6 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import * as THREE from "three";
 
-// Logo image URLs
 const logoUrls = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -19,7 +18,6 @@ const logoUrls = [
   "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
 ];
 
-// Position logos evenly in a sphere
 const sphericalPositions = (count, radius = 4) =>
   Array.from({ length: count }, (_, i) => {
     const phi = Math.acos(-1 + (2 * i) / count);
@@ -31,7 +29,6 @@ const sphericalPositions = (count, radius = 4) =>
     ];
   });
 
-// Component to display all logo sprites
 const LogoSprites = () => {
   const textures = useLoader(THREE.TextureLoader, logoUrls);
   const positions = useMemo(() => sphericalPositions(textures.length), [textures.length]);
@@ -47,7 +44,6 @@ const LogoSprites = () => {
   );
 };
 
-// Main scene
 export default function LogoSphere() {
   return ( 
     <div className="w-[40vw] min-h-[50vh]">

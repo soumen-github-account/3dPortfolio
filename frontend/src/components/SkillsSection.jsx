@@ -70,7 +70,6 @@ const SkillCard = ({ title, icon, skills }) => {
       onMouseMove={handleMouseMove}
       className="relative cursor-crosshair overflow-hidden bg-gradient-to-br from-[#10131a] to-[#0f1115] p-6 rounded-2xl shadow-lg backdrop-blur-md border border-white/10 transition-transform duration-300 hover:scale-[1.015]"
     >
-      {/* Mouse glow effect */}
       <div
         className={`pointer-events-none absolute md:w-50 md:h-50 w-40 h-40 rounded-full 
                     bg-[radial-gradient(circle,_#ffffffcc,_#00ffaa88,_#00000000)] 
@@ -82,7 +81,6 @@ const SkillCard = ({ title, icon, skills }) => {
         }}
       />
 
-      {/* Card content */}
       <div className="flex z-10 items-center gap-4 mb-4">
         <div className="text-3xl bg-gradient-to-br from-[#618101] to-green-700 text-white rounded-xl p-3 shadow-lg">
           {icon}

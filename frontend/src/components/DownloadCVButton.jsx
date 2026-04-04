@@ -7,7 +7,6 @@ const DownloadCVButton = () => {
   const handleDownload = () => {
     setIsDownloading(true);
 
-    // Create download link
     const link = document.createElement("a");
     link.href = "/Soumen_Das_CV.pdf";
     link.download = "Soumen_Das_CV.pdf";
@@ -15,7 +14,6 @@ const DownloadCVButton = () => {
     link.click();
     document.body.removeChild(link);
 
-    // Stop animation after 1.5s
     setTimeout(() => {
       setIsDownloading(false);
     }, 1500);
@@ -40,7 +38,6 @@ const DownloadCVButton = () => {
         group cursor-pointer
       "
     >
-      {/* Icon */}
       <GoDownload
         className={`
           relative z-10 text-[14px]
@@ -48,7 +45,6 @@ const DownloadCVButton = () => {
         `}
       />
 
-      {/* Text */}
       <span className="relative z-10 text-[14px]">
         {isDownloading ? "Downloading..." : "Download CV"}
       </span>

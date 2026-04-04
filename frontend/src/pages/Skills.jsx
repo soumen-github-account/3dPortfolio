@@ -76,20 +76,18 @@ export default function Roadmap() {
   useEffect(() => {
     const container = scrollContainerRef.current;
 
-    // Animate star movement inside scroll container
     gsap.to(starRef.current, {
       scrollTrigger: {
         trigger: container,
         start: "10%",
         end: "bottom bottom",
         scrub: 10,
-        scroller: container, // THIS IS THE FIX
+        scroller: container, 
       },
       top: "100%",
       ease: "none",
     });
 
-    // Animate progress bar height
     gsap.to(progressRef.current, {
       delay:10,
       scrollTrigger: {
@@ -97,13 +95,12 @@ export default function Roadmap() {
         start: "10%",
         end: "bottom bottom",
         scrub: 10, 
-        scroller: container, // only if scroll is inside a div
+        scroller: container, 
       },
       height: "100%",
       ease: "none",
     });
 
-    // Animate steps one by one
     stepRefs.current.forEach((el, i) => {
       gsap.fromTo(
         el,
@@ -116,7 +113,7 @@ export default function Roadmap() {
           scrollTrigger: {
             trigger: el,
             start: "top 90%",
-            scroller: container, // IMPORTANT!
+            scroller: container, 
           },
         }
       );
@@ -137,7 +134,6 @@ export default function Roadmap() {
         ref={scrollContainerRef}
         className="relative flex gap-10 overflow-y-scroll scroll-hide h-[80vh] w-full px-4 scroll-smooth"
       >
-        {/* Progress Bar */}
         <div className="relative w-[5px] h-[1200px] bg-gray-800 rounded-full">
           <div
             ref={progressRef}
@@ -150,7 +146,6 @@ export default function Roadmap() {
           />
         </div>
 
-        {/* Step Items */}
         <div className="flex flex-col gap-10 py-4">
           {steps.map((step, i) => (
             <div
