@@ -4,6 +4,8 @@ import Gradient1 from '../assets/Gradient1.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { Helmet } from 'react-helmet-async'
+
 gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   
