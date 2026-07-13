@@ -36,14 +36,6 @@ const Hero = () => {
       stagger: 0.2,
     });
 
-      gsap.from(".th1",{
-        y:200,
-        opacity:0,
-        duration: 1,
-        delay:1,
-        stagger:1,
-      })
-
     gsap.from(".image", {
       x:500,
       duration:1,
